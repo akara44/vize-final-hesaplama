@@ -1,0 +1,146 @@
+html {
+    position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
+    margin: 0px; }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit; }
+  
+  body {
+
+    background-color: #f2f2f2;
+    color: #000000;
+    height: 100%;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px; 
+  }
+  p{
+    font-size:17.5px;
+    word-spacing:0.3px;
+  }
+  .toppading{
+    padding-top: 175px;
+  }
+  #caption{
+    padding-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  
+  
+  #gradsys {
+    padding-top: 1%;
+    padding-bottom: 1%; 
+  }
+  
+  #prev {
+    margin-top: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: #ffffff; 
+  }
+  
+  .InnerPrev {
+    color: #463A3A;
+    background-color: #A6ACB2;
+    border: 1px solid #4b8df8;
+    font-size: 15px; 
+  }
+  
+  .prevCourse {
+    background-color: #A6ACB2;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-top: -10px; 
+  }
+  
+  .gradingSys {
+    background-color: #A6ACB2;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-top: -10px; 
+  }
+  
+  #grades {
+    padding-top: 1%;
+    padding-bottom: 1%; }
+  
+  select {
+    width: 70px;
+    color: #484646; }
+  
+  select:hover {
+    cursor: pointer; }
+  
+  .gradesTable thead {
+    color: #ffffff; 
+  }
+  
+  .gradesTable {
+    border-collapse: collapse;
+    background-color: #A6ACB2 !important;
+    color: white;
+    margin-top: -10px; 
+  }
+  .gradingTable th, tr, td{
+      padding: 10px;
+  }
+  
+  .newGrade, .oldGrade {
+    width: 90px; }
+  
+  .credits {
+    color: black;
+    width: 90px; }
+  
+  .Course {
+    color: #463A3A; }
+  
+  #addButton {
+    border-radius: 2px; }
+  
+  #addButton:hover {
+    cursor: pointer; }
+  
+  #calcButton:hover {
+    cursor: pointer; }
+  
+  #fbutton {
+    border: 1px solid black;
+    border-radius: 2px;
+    height: 20px;
+    width: 100px;
+    padding: 10px;
+    background-color: #3a5795;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none; }
+  
+  #fbuttonOuter {
+    margin-top: 100px; }
+  
+  footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    padding-left: 3%;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: #161718; }
+  
+  .konum{
+margin-top: -150px;
+  }
+  
+  .desinger{
+padding-left: 1300px;
+}

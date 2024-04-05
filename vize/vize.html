@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-8963933792885162",
+	    enable_page_level_ads: true
+	  });
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116057777-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116057777-1');
+	</script>
+
+	<title>Vize/Final Not Hesaplama</title>
+	
+	<meta charset= "UTF-8">
+	<link rel='canonical' href='http://metugpa.com/not_hesaplama.html'>
+	<meta name="description" content="Bu not hesaplama programını kullanarak üniversite öğrencileri bir dersten bekledikleri not için tahminde bulunabilirler.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel='alternate' href='http://metugpa.com/grade_calculator.html' hreflang='en'>
+	<link rel='alternate' href='http://metugpa.com/not_hesaplama.html' hreflang='tr'>
+	<link rel='alternate' hreflang='x-default' href='http://metugpa.com/grade_calculator.html'>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+
+	<link rel="stylesheet" type="text/css" media ="only screen and (min-width:501px)" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media ="only screen and (max-width:500px)" href="css/mobile_grade.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+
+
+
+	
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+	<link rel="icon" href="http://www.metugpa.com/metugpa.jpg" type="image/jpg" sizes="16x16">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+	<script src="js/not.js"></script>
+	
+	
+
+	
+	
+</head>
+<body>
+    
+	<header>
+			
+		</header>
+<div class="konum">
+	<div class="container-fluid toppading">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<h1 class="text-center" id ="baslik">Not Hesaplama</h1>
+				<br>
+				<p>Öğrenciler bu not hesaplama programı ile bir dersten aldıkları son notu hesaplayabilirler. Böylece, ortalamayı(çan-curve) da hesaplayarak, kendi notu ile ortalamanın notu arasında bir kıyas yapabilir.</p>
+				<br>
+				
+				 <form class="form-horizontal">
+				 	<div id = "midterms">
+				 		<div>
+						    <div class="form-group">
+						      <label class="control-label col-sm-4" for="midterm1">Vize 1</label>
+						      <div class="col-sm-4">
+						        <input type="number" class="form-control" id="midterm1" placeholder="Not" name="midterm1">
+						      </div>
+						      <div class="col-sm-3">
+						        <input type="number" class="form-control" id="percent1" placeholder="%" name="percent1">
+						      </div>
+						      <div class="col-sm-1">
+						       <button type="button" class="btn btn-primary" onclick="addMidterm()">+</button>
+						       </div>
+					      </div>
+					</div>
+				     
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-4" for="final">Final</label>
+				      <div class="col-sm-4">
+				        <input type="number" class="form-control" id="final" placeholder="Not" name="final">
+				      </div>
+				      <div class="col-sm-3">
+				        <input type="number" class="form-control" id="percentf" placeholder="%" name="percentf">
+				      </div>
+				    </div>
+				    <div id="others">
+				    	<div>
+						    <div class="form-group">
+						      <label class="control-label col-sm-4" for="others1">Diğer</label>
+						      <div class="col-sm-4">
+						        <input type="number" class="form-control" id="others1" placeholder="Not" name="final">
+						      </div>
+						      <div class="col-sm-3">
+						        <input type="number" class="form-control" id="percento1" placeholder="%" name="percento">
+						      </div>
+						      <div class="col-sm-1">
+						       <button type="button" class="btn btn-primary" onclick="addOthers()">+</button>
+						      </div>
+						    </div>
+						</div>
+				    </div>
+  				</form>
+  				<br>
+  				<div class ="calculator text-center">
+						<button type="button" id="calcButton" class="btn btn-success btn-lg" name="CalculateButton" Onclick="gradeCalc()">Hesapla</button>
+				</div>
+				<div id="result">
+				</div>
+				<h2 style="padding-top: 10%;">Not Hesaplama ile İlgili Açıklamalar</h2>
+				<p>Bu not hesaplama aracının kullanımı oldukça kolaydır.</p>
+				<ul>
+				<li>Aldığınız dersin vizelerinin notlarını ve bu sınavların yüzdelerini girin. </li>
+				<br>
+				<li>Daha sonra bu dersin finalinden kaç aldıysanız ya da almayı bekliyorsanız, bu sayıyı final kısmına girin. Final sınavının yüzdesini de girin. Diğer; ödev, proje, quiz gibi dersle ilgili diğer görevleri ifade edebilir.</li>
+				<br>
+				<li>+ butonunu kullanarak, vize sayısını ya da diğer sayısını artırabilirsiniz.</li>
+				<br>
+				<li>Son olarak hesapla butonuna basarak dersten alacağınız tahmini notunuzu görebilirsiniz.</li>
+				 </ul>
+				 <h3 style="padding-top: 5%;">Örnek - Vize Final Not Hesaplama</h3>
+				 <p>Diyelim ki aldığımız dersin iki vizesi bir finali ve bir projesi var.</p>
+				 <p>Bunların yüzdeleri sırasıyla  20, 20, 40, 20 olsun</p>
+				 <p>Midterm 1 = 86, Midterm 2 = 84, Final = 70, Project = 90 aldığımızı varsayalım.</p>
+				 <p id="son" style="padding-bottom: 5%;">Sonuç olarak hesaplama yaptığımızda 80 aldığımızı görürüz. Aldığımız bu not üniversiteye ve derslere göre çeşitlilik göstererek farklı harf notlarına karşılık gelebilir.</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+		<span class="desinger">BKOKS</span>
+<script src="app.js"></script>
+</body>
+
+</html>
