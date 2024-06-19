@@ -1,4 +1,3 @@
 # vize-final-hesaplama
-# Öğrencinin girdiği sınav sayısına göre input oluşturulan ve öğrencinin notlarını inputa girmesiyle yıl sonu ortalamasını hesaplayan bir proje geliştirdim.
-
+# I developed a project that creates input according to the number of exams taken by the student and calculates the year-end average by entering the student's grades into the input.
 ![vize](vize.PNG)
